@@ -49,7 +49,7 @@ float mc_pi(int dots)
        float dist=sqrt(pow(X,2)+pow(Y,2));
         if(dist<=1)
           {
-             points_in_circle+=1;
+             points_in_circle=points_in_circle+1;
            }
       }
    float pi=(float)points_in_circle/(float)dots;
