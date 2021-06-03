@@ -23,4 +23,13 @@ int main(void) {
     }
   }
 }
-
+long double wallis_pi(int m)
+{
+    long double pi=1.0;
+   for(int i=1;i<=m;i++)
+    {
+       long double n=4.0*i*i;
+        pi*=n/(n-1);
+     }
+     return pi*2;
+}
