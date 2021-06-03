@@ -38,6 +38,23 @@ int main(void) {
     }
   }
 }
+float mc_pi(int dots)
+{
+  float X,Y;
+  int points_in_circle=0;
+  for(int i=0;i<dots;i++)
+     {
+        X=frandom();
+        Y=frandom();
+       float dist=sqrt(pow(X,2)+pow(Y,2));
+        if(dist<=1)
+          {
+             points_in_circle+=1;
+           }
+      }
+   float pi=(float)points_in_circle/(float)dots;
+    return 4*pi;
+}
 
 
 
